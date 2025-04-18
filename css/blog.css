@@ -1,0 +1,75 @@
+
+/* Start blog-details */
+.post,.comments,.reply-form,.recent-post,.search-post,.archives,.tags{
+    background-color: #FFF;
+}
+.post h3{
+    font-size: 25px;
+}
+.post-details a, .comments-card a{
+    color: #0d6efd;
+}
+.border-start {
+    border-left: 4px solid #0d6efd !important;
+    padding-left: 15px;
+}
+.comments-img img{
+    max-width: 80px;
+    /* max-width: 2.5rem; */
+}
+.comments-caption h4{
+    font-size: 1.35rem;
+}
+.search-post{
+    padding: 2rem 0;
+}
+.search-post .btn, .search-post input{
+    border-radius: 0;
+}
+.search-post input{
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; 
+}
+.recent-post li::before, .archives li::before{
+    content: "";
+    display: inline-block;
+    vertical-align:middle;
+    width: 10px;
+    height: 1px;
+    background-color: #0d6efd;
+    margin-right: 5px;
+}
+.recent-post li a:hover,.archives li a:hover{
+    color: #0d6efd;
+}
+#blog-details li{
+    margin-bottom: 10px;
+}
+.tags li{
+    display: inline-block;
+    -webkit-margin-start: 5px;
+            margin-inline-start: 5px;
+    background-color: #0d6efd;
+    padding: 5px 8px;
+    border-radius: 15px;
+    color: #FFF;
+}
+/* End blog-details */
+
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+    .comments-caption h4 {
+        font-size: 1.1rem;
+    }
+    .blockquote{
+        font-size: 1.15rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+    h3,.post h3{
+        font-size: 1.3rem;
+    }
+}
